@@ -1,0 +1,6 @@
+services:
+  - docker
+install:
+  - docker build -t josepipher/travis-encrypt .
+script:
+  - docker run -d josepipher/travis-encrypt bash
